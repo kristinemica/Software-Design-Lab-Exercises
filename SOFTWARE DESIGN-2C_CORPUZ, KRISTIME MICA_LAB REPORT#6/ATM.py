@@ -22,7 +22,7 @@ class ThreadedServer(object):
             try:
                 data = client.recv(size)
                 if data:
-                    # Set the response to echo back the recieved data
+
                     response = data
                     client.send(response)
                 else:
